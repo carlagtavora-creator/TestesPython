@@ -26,10 +26,17 @@ while True: #condição de parada do loop
     if opcao == "2":
         print("Subtração")
         num1 = str(input("Digite o primeiro número: "))
+<<<<<<< Updated upstream
         lista_valor = list(num1.split(""))
         subtracao = int(lista_valor[0]) #inicializa a subtração com o primeiro elemento da lista
         for num1 in range(1, len(lista_valor)): #percorre a lista a partir do segundo elemento
             subtracao -= int(lista_valor[i]) #subtrai os valores da lista
+=======
+        lista_valor = list(num1.split(" "))
+        subtracao = int(lista_valor[0]) #inicializa a subtração com o primeiro elemento da lista
+        for num1 in range(1, len(lista_valor)): #percorre a lista a partir do segundo elemento
+            subtracao -= int(lista_valor[num1]) #subtrai os valores da lista
+>>>>>>> Stashed changes
         print(f"O resultado da subtração é: {subtracao}")
 
     if opcao == "3":
