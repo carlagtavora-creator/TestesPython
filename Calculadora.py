@@ -11,6 +11,8 @@ print("[8] - Fatorial")
 print("[9] - Ajuda")
 print("[0] - Sair")
 
+
+        
 while True: #condição de parada do loop
     opcao = input("Digite a opção desejada: ")
 
@@ -76,9 +78,16 @@ while True: #condição de parada do loop
         porcentagem = (int(lista_valor[0]) * int(lista_valor[1])) / 100
         print(f"O resultado da porcentagem é: {porcentagem}")
 
-
-
-
+    if opcao == "8":    
+        print("Fatorial")
+        num1 = str(input("Digite o número: "))
+        def fatorial(num1): #tecnica para calcular o fatorial dele mesmo
+            if num1<1:
+                return 1
+            else:
+                return num1 * fatorial(num1 - 1) #EX: 4 * fatorial(3) = 4 * 3 * fatorial(2) = 4 * 3 * 2 * fatorial(1) = 4 * 3 * 2 * 1 = 24
+        print(f"O resultado do fatorial é: {fatorial(int(num1))}")
+    
     if opcao == "9":
         print("Ajuda")
         print("Para utilizar a calculadora, selecione uma das opções do menu e siga as instruções.")
