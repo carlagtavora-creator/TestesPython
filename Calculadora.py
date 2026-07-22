@@ -11,8 +11,6 @@ print("[8] - Fatorial")
 print("[9] - Ajuda")
 print("[0] - Sair")
 
-
-        
 while True: #condição de parada do loop
     opcao = input("Digite a opção desejada: ")
 
