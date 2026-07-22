@@ -68,6 +68,13 @@ while True: #condição de parada do loop
             lista_raizes.append(float(num1) ** (0.5)) #calcula a raiz quadrada e adiciona à lista   
         for i in range(len(lista_valor)): #integração dos resultados na lista
             print(f"O resultado da raiz quadrada é: {lista_raizes[i]}")
+    
+    if opcao == "7":
+        print("Porcentagem")
+        num1 = str(input("Digite o número e a porcentagem: "))
+        lista_valor = list(num1.split(" "))
+        porcentagem = (int(lista_valor[0]) * int(lista_valor[1])) / 100
+        print(f"O resultado da porcentagem é: {porcentagem}")
 
 
 
